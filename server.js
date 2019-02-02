@@ -10,15 +10,7 @@ app.use(morgan("tiny"));
 
 const genreList = genres.genres; 
 
-function validation(data){
-    const schema = {
-        name:Joi.string().min(3).required()
-    }
 
-    return Joi.validate(data, schema);
-
-
-}
 app.get('/', (req, res)=>{
 
     res.send('Welcome to Vidly API main Page!!!!');
@@ -126,6 +118,16 @@ app.get('/genres/:id', (req, res)=>{
   })
 
 
+
+  function validation(data){
+    const schema = {
+        name:Joi.string().min(3).required()
+    }
+
+    return Joi.validate(data, schema);
+
+
+}
 
 app.listen(port, ()=>{
     console.log('Server is running at :' , port);
