@@ -13,9 +13,13 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "config": "^3.0.1",
+    "debug": "^4.1.1",
     "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.12",
     "helmet": "^3.15.0",
     "joi": "^14.3.1",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "mustache": "^3.0.1"
   }
 }
